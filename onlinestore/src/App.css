@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.background{
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  botton: 20px;
+  /* Preserve aspet ratio */
+  min-width: 80%;
+  min-height: 100%;
+  background-image: url(./background.jpg);
+}
