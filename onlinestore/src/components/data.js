@@ -17,7 +17,7 @@ action_figures:
     {
     id: 3,
     name: "Dragonite",
-    img: "dragonite.jpeg",
+    img: "Dragonite.jpeg",
     },
 
 ],

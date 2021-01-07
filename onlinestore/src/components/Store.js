@@ -21,13 +21,29 @@ return (
   <h1>  Store </h1>
 
 
+  <div className="row">
+
   {action_figures? action_figures.map((item,index)=>{
     return (
-      <p id={index}> {item.name} </p>
+      <div className="col-md-4">
+      <div className="card">
+
+
+        <h3 id={index}> {item.name} </h3>
+
+        <center>
+        <img src={process.env.PUBLIC_URL +'/action_figures/'+item.img}  width={'400px'} height={'300px'}/>
+        </center>
+        
+      </div>
+      </div>
     )
   }):""
 
   }
+
+  </div>
+
 
   </>
   )
