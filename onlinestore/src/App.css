@@ -4,7 +4,7 @@
 
 .background{
   position: fixed;
-  top: 30px;
+  top: 50px;
   left: 30px;
   right: 30px;
   botton: 20px;
@@ -12,4 +12,21 @@
   min-width: 80%;
   min-height: 100%;
   background-image: url(./background.jpg);
+}
+
+
+.shopdiv{
+  padding: 3px 5px 5px 3px;
+  width: fit-content;
+  color: white;
+  background-color: orange;
+}
+
+.shopdiv button{
+  border: 2px;
+  background-color: orange;
+  border-radius: 5px;
+  padding: 3px 5px 5px 3px;
+  width: fit-content;
+  color: white;
 }

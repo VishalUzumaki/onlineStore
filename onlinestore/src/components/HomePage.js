@@ -7,13 +7,13 @@ return (
 
   <>
 
-
-
-
-
   <div className={'background'}>
 
-  <h1>  Welcome to the pokestore.......... </h1>
+  <h1>  Welcome to the pokestore..........  </h1>
+  <div className='shopdiv'>
+     Shop <button>  >>>> </button>
+  </div>
+
 
   </div>
   </>
