@@ -10,9 +10,7 @@ return (
   <div className={'background'}>
 
   <h1>  Welcome to the pokestore..........  </h1>
-  <div className='shopdiv'>
-  <button> >>>> </button>
-  </div>
+
 
 
   </div>

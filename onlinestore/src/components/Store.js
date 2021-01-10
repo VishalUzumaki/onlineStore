@@ -2,17 +2,29 @@ import React,{useState,useEffect} from 'react';
 import Data from './data';
 
 export default function Store(){
+
 console.log(Data);
 
 const[data,setData]=useState();
-const[action_figures,setActionFigures] = useState();
 
+const[action_figures,setActionFigures] = useState();
 
 useEffect(()=>{
   setData(Data);
-  setActionFigures(Data.action_figures);
-},[])
 
+  const newData = [];
+
+  console.log("Hey");
+  for (var i = 0; i < Data.action_figures.length; i++) {
+    let temp= Data.action_figures[i];
+    newData.push({id:temp.id, name: temp.name, quantity : 0, img : temp.img,price: temp.price});
+  }
+
+console.log(newData);
+
+
+setActionFigures(newData)
+},[])
 
 return (
 
@@ -35,7 +47,7 @@ return (
         <img src={process.env.PUBLIC_URL +'/action_figures/'+item.img}  width={'300px'} height={'300px'}/>
         </center>
 
-        <h4> Pric $:{item.price} </h4>
+        <h4> Price: ${item.price} </h4>
 
         <br/>
 
@@ -45,9 +57,9 @@ return (
             <tr>
 
                 <td>
-                  <button className='minusButton'> - </button>
-                <input width='100% !important' type="number" name={item.id} value={0} />
-                  <button className='plusButton'> + </button>
+                  <button  className='btn btn-danger'> - </button>
+                  <input width='100% !important' height='100% important' type="number" name={item.id} value={item.quantity} />
+                  <button  className='btn btn-success'> + </button>
                </td>
 
           </tr>
