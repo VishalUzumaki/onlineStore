@@ -5,7 +5,7 @@
 .background{
   position: fixed;
   top: 50px;
-  left: 30px;
+  left: 30  px;
   right: 30px;
   botton: 20px;
   /* Preserve aspet ratio */
@@ -29,4 +29,28 @@
   padding: 3px 5px 5px 3px;
   width: fit-content;
   color: white;
+}
+
+
+.heading{
+  width: fit-content;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+
+}
+
+
+.minusButton{
+  background-color: red;
+  color: white;
+  width: '10px';
+}
+
+.plusButton{
+
+  background-color: green;
+  color:white;
+  width:'10px';
+
 }

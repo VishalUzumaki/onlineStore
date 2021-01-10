@@ -11,7 +11,7 @@ return (
 
   <h1>  Welcome to the pokestore..........  </h1>
   <div className='shopdiv'>
-     Shop <button>  >>>> </button>
+  <button> >>>> </button>
   </div>
 
 
