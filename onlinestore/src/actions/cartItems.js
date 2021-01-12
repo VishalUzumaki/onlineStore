@@ -1,5 +1,17 @@
-import Data from '../components/Data';
+export const increment =(id)=>{
 
-console.log(Data)
+return  {
+  type: 'Increment',
+  id: id
+};
 
-// export default function cartFunction()
+};
+
+export const decrement=(id)=>{
+
+return {
+  type: 'Decrement',
+  id: id
+};
+
+};

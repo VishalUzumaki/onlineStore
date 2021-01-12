@@ -11,6 +11,8 @@ return (
       <Button variant="outline-primary"> <Link to={"/"} > Home </Link></Button>{' '}
 
       <Button variant="outline-primary"> <Link to={"/store"}> Store </Link> </Button> {''}
+
+
      </div>
 
 </>

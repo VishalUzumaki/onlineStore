@@ -6,19 +6,32 @@ for (var i = 0; i < Data.action_figures.length; i++) {
   newData.push({id:temp.id, name: temp.name, quantity : 0, img : temp.img,price: temp.price});
 }
 
+
 const store = ( state = newData,action)=>{
 
   switch (action.type) {
     case 'Increment':
 
-      for (var i = 0; i < state.length; i++) {
-        if (state[i].id == action.id){
-          state[i].quantity = state[i].quantity + 1
+      let incrementCopy = JSON.parse(JSON.stringify(state));
+
+      for(var i=0;i<incrementCopy.length;i++){
+        if(incrementCopy[i].id == action.id){
+          incrementCopy[i].quantity = incrementCopy[i].quantity + 1
         }
       }
 
-      return state + +action.payload
+      return incrementCopy;
 
+   case 'Decrement':
+
+        let decrementCopy = JSON.parse(JSON.stringify(state));
+
+        for(var i=0;i<decrementCopy.length;i++){
+          if(decrementCopy[i].id == action.id && decrementCopy[i].quantity > 0){
+            decrementCopy[i].quantity = decrementCopy[i].quantity -1
+          }
+        }
+        return decrementCopy;
 
     default:
       return state
