@@ -29,7 +29,7 @@ return (
 
 
     return (
-      <div className="col-md-3" style={{border:'2px',paddingTop: '10px'}}>
+      <div className="col-md-3" style={{border:'2px',paddingTop: '10px' ,paddingBottom:'10px'}}>
       <div className="card">
 
         <h3 id={index} className={"btn btn-primary"}> {item.name} </h3>

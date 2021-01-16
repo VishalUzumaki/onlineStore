@@ -10,8 +10,9 @@ return (
      <div style={{float:'right',paddingRight:'20px',paddingTop:'5px'}}>
       <Button variant="outline-primary"> <Link to={"/"} > Home </Link></Button>{' '}
 
-      <Button variant="outline-primary"> <Link to={"/store"}> Store </Link> </Button> {''}
+      <Button variant="outline-primary" > <Link to={"/store"}> Store </Link> </Button> {''}
 
+      <Button variant="outline-primary"> <Link to={"/cart"}> Cart </Link> </Button> {''}
 
      </div>
 
